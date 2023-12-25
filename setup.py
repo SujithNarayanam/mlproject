@@ -11,7 +11,6 @@ def get_requirements(file_path:str)-> List[str]:
         requirements = file_obj.readlines()
         for a in requirements:
             a =  a.replace("\n","")
-        # requirements [ a.replace("\n","") for a in requirements ]
 
 
         if '-e .'in requirements:
